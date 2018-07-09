@@ -188,6 +188,9 @@ local function commonfn(pondtype)
     inst.components.workable:SetWorkLeft(3)
     inst.components.workable:SetOnFinishCallback(onhammered)
     --inst.components.workable:SetOnWorkCallback(onhit)
+    -- Very added
+    --inst:AddComponent("inventoryitem")
+    --inst.components.inventoryitem.atlasname = "images/inventoryitems/pond.xml"
 
     inst:ListenForEvent("onbuilt", onbuilt)
 
@@ -274,7 +277,7 @@ local function pondcave()
     return inst
 end
 
-return Prefab("pond", pondfrog, assets, prefabs),
-    Prefab("pond_mos", pondmos, assets, prefabs),
-    Prefab("pond_cave", pondcave, assets, prefabs),
-    MakePlacer("pond_placer", "pond", "pond", "pond")
+return Prefab("common/buildable_pond", pondfrog, assets, prefabs),
+    Prefab("common/buildable_pond_mos", pondmos, assets, prefabs),
+    Prefab("common/buildable_pond_cave", pondcave, assets, prefabs),
+    MakePlacer("common/buildable_pond_placer", "buildable_pond", "buildable_pond", "buildable_pond")
