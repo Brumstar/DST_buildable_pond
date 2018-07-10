@@ -277,4 +277,4 @@ end
 return Prefab("common/buildable_pond", pondfrog, assets, prefabs),
     Prefab("common/buildable_pond_mos", pondmos, assets, prefabs),
     Prefab("common/buildable_pond_cave", pondcave, assets, prefabs),
-    MakePlacer("common/buildable_pond_placer", "marsh_tile", "marsh_tile", "idle")
+    MakePlacer("common/buildable_pond_placer", "marsh_tile", "marsh_tile", "idle", nil, nil, nil, nil, nil, "two", nil)
