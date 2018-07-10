@@ -17,3 +17,11 @@ AddMinimapAtlas("images/inventoryimages/buildable_pond.xml")
 STRINGS.RECIPE_DESC.POND = "Cold and wet."
 
 AddRecipe("pond", {Ingredient("twigs", 1)}, RECIPETABS.FARM,  TECH.NONE, "buildable_pond_placer", nil, nil, nil, nil,  "images/inventoryimages/buildable_pond.xml", "buildable_pond.tex" )
+
+
+
+--local function BuildablePondPostInit( inst )
+--    return inst
+--end
+ 
+--AddPrefabPostInit( "buildable_pond", BuildablePondPostInit)
