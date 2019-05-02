@@ -15,6 +15,10 @@ A mod for the game Don't Starve Together that allows ponds to be craftable items
   - Only frogs right now
 # Notes
 
+## prefabs.lua
+
+`Prefab = Class( function(self, name, fn, assets, deps, force_path_search)`
+
 ## prefabutil.lua
 
 `function MakePlacer(name, bank, build, anim, onground, snap, metersnap, scale, fixedcameraoffset, facing, postinit_fn)`
