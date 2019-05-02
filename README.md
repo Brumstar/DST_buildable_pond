@@ -13,3 +13,8 @@ A mod for the game Don't Starve Together that allows ponds to be craftable items
 # Tested 
 - [x] Do ponds produce the right things in the specific biomes
   - Only frogs right now
+# Notes
+
+## prefabutil.lua
+
+`function MakePlacer(name, bank, build, anim, onground, snap, metersnap, scale, fixedcameraoffset, facing, postinit_fn)`
