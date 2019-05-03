@@ -22,3 +22,11 @@ A mod for the game Don't Starve Together that allows ponds to be craftable items
 ## prefabutil.lua
 
 `function MakePlacer(name, bank, build, anim, onground, snap, metersnap, scale, fixedcameraoffset, facing, postinit_fn)`
+
+# Useful Console Commands
+
+## Reveal Minimap
+~~~
+minimap = TheSim:FindFirstEntityWithTag("minimap")
+minimap.MiniMap:ShowArea(0,0,0, 10000)
+~~~~
