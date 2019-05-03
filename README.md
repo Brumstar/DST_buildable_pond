@@ -23,6 +23,16 @@ A mod for the game Don't Starve Together that allows ponds to be craftable items
 
 `function MakePlacer(name, bank, build, anim, onground, snap, metersnap, scale, fixedcameraoffset, facing, postinit_fn)`
 
+# Debugging
+
+## Find all members of table
+
+~~~
+for key,value in pairs(inst) do
+    print("found member " .. key);
+end
+~~~
+
 # Useful Console Commands
 
 ## Reveal Minimap
